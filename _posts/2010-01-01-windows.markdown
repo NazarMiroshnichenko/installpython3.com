@@ -13,21 +13,21 @@ Microsoft hosts a community release of Python 3 in the Microsoft Store for compu
 
 ## Python App in the Microsoft Store
 
-Now that you're using Windows 10 click on the search bar at the bottom left of the screen and type "python." Click on the best match result.
+Click on the search bar at the bottom left of the screen and type "python." Click on the best match result.
 
 <img class="img-fluid" src="{{ site.url }}/assets/images/windows/01_taskbar.png" alt="Taskbar">
 
 This automatically launches Python 3.9 on the Microsoft Store. Click on the blue "Get" button to download it.
 
-__Note__: If you have a "See System Requirements" link below the Get button it's likely you need to upgrade to Windows 10. And if you're not logged into your Microsoft account, there will be a prompt asking if you want to sign in. It's fine to say "No, thanks" for now.
-
 <img class="img-fluid" src="{{ site.url }}/assets/images/windows/02_store.png" alt="Microsoft Store">
+
+__Note__: If you have a "See System Requirements" link below the Get button it's likely you need to upgrade to Windows 10. And if you're not logged into your Microsoft account, there will be a prompt asking if you want to sign in. It's fine to say "No, thanks" for now.
 
 Once downloaded, click on the three dots `...` after "Pin to Start" and click on "Pin to Taskbar" so it is always available.
 
 <img class="img-fluid" src="{{ site.url }}/assets/images/windows/03_pin.png" alt="Microsoft Store">
 
-Click on the pinned Python logo.
+Click on the pinned Python logo on the bottom taskbar.
 
 <img class="img-fluid" src="{{ site.url }}/assets/images/windows/04_taskbar_pin.png" alt="Pinned Taskbar">
 
