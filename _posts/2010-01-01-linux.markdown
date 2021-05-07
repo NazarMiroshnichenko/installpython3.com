@@ -44,4 +44,21 @@ $ python3.8
 ```
 
 ## Next Steps
-To learn more about Python, the books [Python Crash Course](https://amzn.to/3dGYTRe) and [Automate the Boring Stuff](https://amzn.to/366CebJ) are great resources. For free tutorials on web development with Python check out [Learn Django](https://learndjango.com).
+Two excellent beginner-friendly Python books are [Python Crash Course](https://amzn.to/3dGYTRe) and [Automate the Boring Stuff](https://amzn.to/366CebJ). If you'd like to learn web development with Python, check out [Learn Django](https://learndjango.com).
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <a href="https://amzn.to/3dGYTRe" target="_blank">
+        <img class="img-fluid" src="{{ site.url }}/assets/images/pcc_book.jpg" alt="Python Crash Course book">
+      </a>
+      [Python Crash Course](https://amzn.to/3dGYTRe)
+    </div>
+    <div class="col">
+      <a href="https://amzn.to/3dGYTRe" target="_blank">
+        <img class="img-fluid" src="{{ site.url }}/assets/images/automate_book.jpg" alt="Automate the Boring Stuff book">
+      </a>
+      [Python Crash Course](https://amzn.to/3dGYTRe)
+    </div>
+  </div>
+</div>
