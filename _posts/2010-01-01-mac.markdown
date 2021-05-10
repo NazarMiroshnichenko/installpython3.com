@@ -1,146 +1,76 @@
 ---
 layout: page
 title:  "InstallPython3.com | Mac"
-description: "How to install Python 3 properly on a Mac computer"
+description: "How to install Python 3 on a Mac computer"
 date:   2019-08-06 08:53:27 -0500
 categories:
 sitemap: true
 ---
 
-# Install Python 3 on MacOS
+# macOS
 
-Historically MacOS came preinstalled with Python 2, however starting with [Mac 10.15](https://developer.apple.com/documentation/macos_release_notes/macos_catalina_10_15_beta_10_release_notes) (*released in October 2019*) this is no longer the case. And since [Python 2 will no longer be officially supported](https://www.python.org/dev/peps/pep-0373/) as of January 1, 2020, you should really use Python 3 instead.
+On Mac the recommended approach is to use the official [Python.org](https://www.python.org/downloads/) installer. Previously the package manager [Homebrew](https://brew.sh/) was a great choice--it handled software installs and upgrades elegantly in _most_ cases--but for Python itself there are several serious issues detailed by [Justin Mayer in this post](https://justinmayer.com/posts/homebrew-python-is-not-for-you/). As a result, using the official [Python.org](https://www.python.org/downloads/) installer is now a better option.
 
-There are multiple ways to install Python 3 on a MacOS computer. The official Python website even recommends [downloading it directly](https://www.python.org/downloads/), however this approach can cause confusion around PATH variables, updates, and uninstalls. A better approach, in my opinion, is to instead use the popular package manager [Homebrew](https://brew.sh) which automates updates and juggling multiple versions of Python on a computer.
+## Official Installer
 
-## Is Python 3 already installed?
+Open a new browser window and visit the [Downloads page](https://www.python.org/downloads/). Click on the button for "Download Python 3.9.5" or whatever the latest version is.
 
-Before we start, make sure Python 3 isn't already installed on your computer. Open up the command line via the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)) application which is located at `Applications -> Utilities -> Terminal`.
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/1_pythonsite.png" alt="Python.org Website">
 
-Then type the command `python --version` followed by the **Enter** key to see the currently installed version of Python.
+Click "Allow" on the popup asking if you want to allow downloads from "www.python.org."
 
-```
-$ python --version
-Python 2.7.17
-```
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/2_allow.png" alt="Python.org Popup">
 
-**Note**: The dollar sign, (`$`), indicates user input. Everything *after* is intended to be typed by the user followed by the Enter key. Any output, such as `Python 2.7.17` in this case, does not have a dollar sign in front.
-In short: don't type `$` before your commands!
+Open up a new `Finder` window (the keyboard shortcut of pressing `Command` + `n` will do this) and click on the sidebar for "Downloads." Then doubleclick on the Python package to install it.
 
-It's possible that Python 3 may have already been installed as `python3`. Run the command `python3 --version` to check, however most likely this will throw an error.
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/3_downloads.png" alt="Downloads Directory">
 
-## Install XCode
+This launches the Python Installer. Click on the "Continue" button.
 
-The first step for Python 3 is to install Apple's [Xcode](https://developer.apple.com/xcode/) program which is necessary for iOS development as well as most programming tasks. We will use XCode to install Homebrew.
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/4_continue.png" alt="Python Installer">
 
-In your **Terminal** app, run the following command to install XCode and its command-line tools:
+Next up are several screens. Click "Continue" again on the _Read Me_ page.
 
-```sh
-$ xcode-select --install
-```
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/5_readme.png" alt="Read Me page">
 
-It is a large program so this make take a while to download. Make sure to click through all the confirmation prompts XCode requires.
+Next is the _License_ page. Click "Continue" which will launch a pop up asking if you agree to the terms. Click on "Agree."
 
-## Install Homebrew
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/6_license.png" alt="License Page">
 
-Next install Homebrew by copy/pasting the following command into **Terminal** and then type **Enter**:
+The standard install will save Python to your disk. Click on the "Install" button.
 
-```sh
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/7_install.png" alt="Install Window">
 
-To confirm Homebrew installed correctly, run this command:
+This will launch another pop-up asking for your password. Enter it and click "Install Software."
 
-```sh
-$ brew doctor
-Your system is ready to brew.
-```
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/8_password.png" alt="Install Software">
 
-## Install Python 3
+After installation is a Summary window. You can hit the "Close" button on this.
 
-Now we can install the latest version of Python 3. Type the following command into **Terminal** and press **Enter**:
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/9_close.png" alt="Summary Window">
 
-```sh
-$ brew install python3
-```
+A popup will ask if you want to move the Python installer to the trash. Click on "Move to Trash" as we no longer need the installer.
 
-To confirm which version of Python 3 was installed, run the following command in **Terminal**:
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/10_trash.png" alt="Move to Trash">
 
-```sh
-$ python3 --version
-Python 3.8.5
-```
+There will also be a new Finder window opened with the Python 3.9 package.
 
-Finally, to run our new version of Python 3 open an interactive shall by typing `python3` within **Terminal**:
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/11_done.png" alt="Finder Window">
 
-```sh
-$ python3
-Python 3.8.5 (default, Jul 21 2020, 10:48:26)
-[Clang 11.0.3 (clang-1103.0.32.62)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
+## IDLE vs Command Line
 
-To exit the Python 3 interactive shell, you can type either `exit()` and then **Return** or type `Control+d` which means hold both the **Control** and **D** keys at the same time.
+The simplest way to use Python is via the built-in IDLE. Click on the link for IDLE which launches a new Shell. You can type any command here such as `print("Hello, World")`.
 
-Note that it is still possible to run Python 2 by simply typing `python`:
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/12_idle.png" alt="IDLE">
 
-```sh
-$ python
-Python 2.7.17 (default, Dec 23 2019, 21:25:33)
-[GCC 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.16)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
+You can also now access Python from the command line. Open up the `Terminal` application which is located within `Applications` -> `Utilities` -> `Terminal`.
 
-## Virtual Environments
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/13_terminal.png" alt="Terminal window">
 
-By default, Python packages are installed globally on your computer in a single directory. This can cause major problems when working on multiple Python projects!
+Once open, type `python3` to launch the Python interpreter from the command line. When you see the prompt `>>>` you know it is working. To confirm, type `print("Hello, World")` again.
 
-For example, imagine you have *Project A* that relies upon Django 1.11 whereas *Project B* uses Django 2.2. If you naively installed Django on your computer, only the latest install would be present and available in that single directory. Then consider that most Python projects rely on multiple packages that each have their own version numbers. There's simply no way to keep everything straight and not inadvertently break things with the wrong package versions.
+<img class="img-fluid" src="{{ site.url }}/assets/images/mac/14_terminal_hw.png" alt="Terminal with Hello World">
 
-The solution is to use a **virtual environment** for each project, an isolated directory, rather than installing Python packages globally.
-
-Confusingly, there are multiple tools for virtual environments in Python:
-* [venv](https://docs.python.org/3/library/venv.html) is available by default on Python 3.3+
-* [virtualenv](https://virtualenv.pypa.io/en/stable/) must be installed separately but supports Python 2.7+ and Python 3.3+
-* [Pipenv](https://github.com/pypa/pipenv) is a higher-level tool that automatically manages a separate virtual environment for each project
-
-On MacOS we can install Pipenv with Homebrew.
-
-```sh
-$ brew install pipenv
-```
-
-Then use Pipenv for any Python packages you wish to install. For example, if you want to work with Django 3.1, first create a dedicated directory for it on your computer such as in a `django` directory on your Desktop.
-
-```sh
-$ cd ~/Desktop
-$ mkdir django
-$ cd django
-```
-
-Then install Django within that directory.
-
-```sh
-$ pipenv install django~=3.1.0
-```
-
-If you look within the directory there are now two new files, `Pipfile` and `Pipfile.lock`, which Pipenv uses. To activate the virtual environment type `pipenv shell`.
-
-```sh
-$ pipenv shell
-(django) $
-```
-
-There will now be parentheses around the name of your current directory which indicates the virtual environment is activate. To exit the virtual environment, type `exit`.
-
-```sh
-(django) $ exit
-$
-```
-
-The lack of parentheses confirms the virtual environment is no longer active.
 
 ## Next Steps
 Two excellent beginner-friendly Python books are [Python Crash Course](https://amzn.to/3dGYTRe) and [Automate the Boring Stuff](https://amzn.to/366CebJ). If you'd like to learn web development with Python, check out [Learn Django](https://learndjango.com).
