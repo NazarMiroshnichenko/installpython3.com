@@ -78,16 +78,14 @@ Two excellent beginner-friendly Python books are [Python Crash Course](https://a
 <div class="container">
   <div class="row">
     <div class="col">
-      <a href="https://amzn.to/3dGYTRe" target="_blank">
+      <a href="https://amzn.to/2RKFF6f" target="_blank">
         <img class="img-fluid" src="{{ site.url }}/assets/images/pcc_book.jpg" alt="Python Crash Course book">
       </a>
-      [Python Crash Course](https://amzn.to/3dGYTRe)
     </div>
     <div class="col">
-      <a href="https://amzn.to/3dGYTRe" target="_blank">
+      <a href="https://amzn.to/3hgDAd9" target="_blank">
         <img class="img-fluid" src="{{ site.url }}/assets/images/automate_book.jpg" alt="Automate the Boring Stuff book">
       </a>
-      [Python Crash Course](https://amzn.to/3dGYTRe)
     </div>
   </div>
 </div>
