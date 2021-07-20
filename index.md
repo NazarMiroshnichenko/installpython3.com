@@ -5,6 +5,7 @@
 layout: home
 title: InstallPython3.com
 description: How to install Python 3 on Mac, Windows, Linux, or Chromebook
+redirect_to: https://wsvincent.com/install-python/
 ---
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
